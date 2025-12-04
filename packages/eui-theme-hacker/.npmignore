@@ -1,0 +1,17 @@
+# Source files
+src/
+tsconfig.json
+tsup.config.ts
+
+# Development
+*.log
+.DS_Store
+
+# Tests
+__tests__/
+*.test.ts
+*.spec.ts
+
+# Build artifacts (keep lib/)
+node_modules/
+
