@@ -26,6 +26,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      // Use lodash-es for better tree-shaking (EUI's transitive dep)
+      lodash: "lodash-es",
     },
   },
   // Optimize deps for EUI
