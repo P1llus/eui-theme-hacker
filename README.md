@@ -2,6 +2,8 @@
 
 A 90s cyberpunk/hacker aesthetic theme for [Elastic UI](https://elastic.github.io/eui/).
 
+Demo on [Github Pages](https://p1llus.github.io/).
+
 Provides Matrix-green neon colors, monospace typography, and optional CRT effects for EUI applications.
 
 Part of a fun project to create the tacky 90s hacker aesthetic and learning EUI themeing system.
