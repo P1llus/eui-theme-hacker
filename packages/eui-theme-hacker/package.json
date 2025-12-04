@@ -1,0 +1,80 @@
+{
+  "name": "@p1llus/eui-theme-hacker",
+  "version": "0.1.2",
+  "description": "90s hacker/cyberpunk aesthetic theme for Elastic UI with Matrix-green neon colors, monospace typography, and CRT effects",
+  "license": "Apache-2.0",
+  "author": "Marius Iversen",
+  "homepage": "https://github.com/P1llus/eui-theme-hacker#readme",
+  "bugs": {
+    "url": "https://github.com/P1llus/eui-theme-hacker/issues"
+  },
+  "type": "module",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.ts",
+        "import": "./lib/index.js"
+      },
+      "require": {
+        "types": "./lib/index.d.cts",
+        "require": "./lib/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "lib/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:clean": "rm -rf lib/",
+    "lint:ts": "tsc --noEmit",
+    "prepublishOnly": "yarn build"
+  },
+  "keywords": [
+    "eui",
+    "elastic-ui",
+    "elastic",
+    "theme",
+    "hacker",
+    "cyberpunk",
+    "dark-mode",
+    "dark-theme",
+    "90s",
+    "retro",
+    "matrix",
+    "neon",
+    "terminal",
+    "crt",
+    "monospace",
+    "react",
+    "emotion",
+    "css-in-js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/P1llus/eui-theme-hacker.git",
+    "directory": "packages/eui-theme-hacker"
+  },
+  "peerDependencies": {
+    "@elastic/eui": ">=110.0.0",
+    "@elastic/eui-theme-common": ">=7.0.0",
+    "@emotion/react": ">=11.0.0",
+    "react": ">=17.0.0"
+  },
+  "dependencies": {
+    "@elastic/eui-theme-common": "^7.1.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.14.0",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

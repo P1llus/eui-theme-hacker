@@ -1,0 +1,25 @@
+{
+  "name": "eui-theme-hacker-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "demo"
+  ],
+  "scripts": {
+    "dev": "yarn workspace eui-theme-hacker-demo dev",
+    "build": "yarn workspace @p1llus/eui-theme-hacker build",
+    "build:demo": "yarn workspace eui-theme-hacker-demo build",
+    "lint": "yarn workspaces foreach -A run lint:ts",
+    "clean": "rm -rf packages/*/lib demo/dist node_modules/.cache",
+    "release": "./scripts/release.sh",
+    "release:patch": "./scripts/release.sh patch",
+    "release:minor": "./scripts/release.sh minor",
+    "release:major": "./scripts/release.sh major",
+    "pack": "cd packages/eui-theme-hacker && yarn build && npm pack"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3"
+  },
+  "packageManager": "yarn@1.22.22"
+}
