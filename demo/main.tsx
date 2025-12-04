@@ -17,11 +17,14 @@ import App from "./App";
 import { DynamicStyles } from "./components/DynamicStyles";
 import { DemoSettingsProvider } from "./context/DemoSettingsContext";
 
+// Base path for GitHub Pages
+const basename = import.meta.env.BASE_URL;
+
 createRoot(document.getElementById("root")!).render(
   <DemoSettingsProvider>
     <EuiProvider theme={EuiThemeHacker} colorMode="dark">
       <DynamicStyles />
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <App />
       </BrowserRouter>
     </EuiProvider>

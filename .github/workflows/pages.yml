@@ -36,8 +36,6 @@ jobs:
         run: yarn build
 
       - name: Build demo
-        env:
-          GITHUB_PAGES: "true"
         run: yarn build:demo
 
       - name: Setup Pages
