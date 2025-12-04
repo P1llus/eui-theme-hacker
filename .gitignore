@@ -13,6 +13,7 @@ yarn-error.log*
 
 # Build-related files
 .eslintcache
+*.tsbuildinfo
 
 # Editor directories and files
 .vscode/*
