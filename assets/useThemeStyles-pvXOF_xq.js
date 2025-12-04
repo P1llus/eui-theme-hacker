@@ -1,0 +1,1 @@
+import{u as t,c as n}from"./index-DeX9u4kl.js";import{c as l}from"./vendor-emotion-D0nmU01m.js";const c=l``;function m(o){const{showGlowEffects:s,globalStylesMode:e}=t();return s&&e!=="none"?n(o):c}export{m as u};
