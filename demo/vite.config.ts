@@ -18,8 +18,7 @@ export default defineConfig({
       jsxImportSource: "@emotion/react",
     }),
   ],
-  // For GitHub Pages deployment under /eui-theme-hacker/
-  base: process.env.GITHUB_PAGES ? "/eui-theme-hacker/" : "/",
+  base: "/",
   define: {
     __THEME_VERSION__: JSON.stringify(themePackageJson.version),
   },
