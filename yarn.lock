@@ -495,7 +495,7 @@
     unist-util-visit "^1.4.1"
 
 "@p1llus/eui-theme-hacker@*", "@p1llus/eui-theme-hacker@file:/home/marius/projects/eui-theme-hacker/packages/eui-theme-hacker":
-  version "0.1.5"
+  version "0.1.6"
   resolved "file:packages/eui-theme-hacker"
   dependencies:
     "@elastic/eui-theme-common" "^7.1.0"

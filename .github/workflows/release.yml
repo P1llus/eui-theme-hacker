@@ -34,4 +34,8 @@ jobs:
 
       - name: Publish to npm
         working-directory: packages/eui-theme-hacker
-        run: npm publish --provenance --access public
+        run: npm install -g npm@latest
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test
+      - run: npm publish
