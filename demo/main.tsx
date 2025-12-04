@@ -12,21 +12,18 @@
 import { EuiProvider } from "@elastic/eui";
 import { EuiThemeHacker } from "@p1llus/eui-theme-hacker";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import App from "./App";
 import { DynamicStyles } from "./components/DynamicStyles";
 import { DemoSettingsProvider } from "./context/DemoSettingsContext";
-
-// Base path for GitHub Pages
-const basename = import.meta.env.BASE_URL || "/eui-theme-hacker/";
 
 createRoot(document.getElementById("root")!).render(
   <DemoSettingsProvider>
     <EuiProvider theme={EuiThemeHacker} colorMode="dark">
       <DynamicStyles />
-      <BrowserRouter basename={basename}>
+      <Router>
         <App />
-      </BrowserRouter>
+      </Router>
     </EuiProvider>
   </DemoSettingsProvider>
 );
