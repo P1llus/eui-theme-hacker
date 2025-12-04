@@ -32,4 +32,19 @@ export default defineConfig({
   optimizeDeps: {
     include: ["@elastic/eui", "@emotion/react", "@emotion/css"],
   },
+  build: {
+    // Chunk splitting for better caching
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Split large vendor libraries
+          "vendor-react": ["react", "react-dom", "react-router-dom"],
+          "vendor-eui": ["@elastic/eui"],
+          "vendor-emotion": ["@emotion/react", "@emotion/css"],
+        },
+      },
+    },
+    // Reduce chunk size warnings threshold
+    chunkSizeWarningLimit: 1000,
+  },
 });
