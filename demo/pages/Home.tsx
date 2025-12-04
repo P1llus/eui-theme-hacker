@@ -203,7 +203,7 @@ export default function Home() {
         <h1 css={[heroTitle, titleGlow]}>EUI Hacker Theme</h1>
         <EuiFlexGroup justifyContent="center" gutterSize="s">
           <EuiFlexItem grow={false}>
-            <EuiBadge color="hollow">v0.1.2</EuiBadge>
+            <EuiBadge color="hollow">v{__THEME_VERSION__}</EuiBadge>
           </EuiFlexItem>
         </EuiFlexGroup>
         <EuiText css={terminalPrompt}>{typedText}</EuiText>

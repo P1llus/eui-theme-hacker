@@ -11,6 +11,7 @@ jobs:
     permissions:
       contents: write
       id-token: write
+      pages: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,9 +33,33 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build
+      - name: Build theme package
         run: yarn build
 
       - name: Publish to npm
         working-directory: packages/eui-theme-hacker
         run: npm publish --provenance --access public
+
+      - name: Build demo for GitHub Pages
+        env:
+          GITHUB_PAGES: true
+        run: yarn build:demo
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: demo/dist
+
+  deploy-pages:
+    needs: release
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
