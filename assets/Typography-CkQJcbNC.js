@@ -1,0 +1,39 @@
+import{u as g,c as o,j as l,d as e,E as t,m as h,e as i,i as n,l as r,f as a,h as z,o as d,n as f}from"./index-CplmWIIo.js";import{u as p}from"./useThemeStyles-5PosgjHC.js";import{E as u}from"./code-D_41xJum.js";import{E as y}from"./code_block-DLnWOn4G.js";import"./delay_render-Ch35Zyxi.js";const S=[{name:"xxxs",size:"10px",lineHeight:"1.2"},{name:"xxs",size:"11px",lineHeight:"1.3"},{name:"xs",size:"12px",lineHeight:"1.4"},{name:"s",size:"14px",lineHeight:"1.5"},{name:"m",size:"16px",lineHeight:"1.5"},{name:"l",size:"20px",lineHeight:"1.4"},{name:"xl",size:"24px",lineHeight:"1.3"},{name:"xxl",size:"32px",lineHeight:"1.2"}],w=[{name:"light",value:300},{name:"regular",value:400},{name:"medium",value:500},{name:"semiBold",value:600},{name:"bold",value:700}];function B(){const{euiTheme:s}=g(),x=p(s.colors.primary),m=o`
+    font-family: ${s.font.familySerif};
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  `;return l(z.Section,{children:[e(d,{size:"l",children:e("h1",{css:x,children:"Typography"})}),e(r,{size:"s"}),e(n,{color:"subdued",children:e("p",{children:"Font families, sizes, and weights used in the hacker theme."})}),e(r,{size:"xl"}),e(d,{size:"xs",children:e("h2",{css:m,children:"Font Families"})}),e(r,{size:"m"}),l(t,{gutterSize:"l",children:[e(i,{children:e(h,{paddingSize:"l",hasBorder:!0,style:{height:"100%",textAlign:"center"},children:l(t,{direction:"column",justifyContent:"spaceBetween",style:{height:"100%"},children:[l(i,{grow:!1,children:[e(n,{css:o`
+                    font-family: ${s.font.family};
+                    font-size: 28px;
+                  `,children:"Fira Code"}),l(n,{size:"s",color:"subdued",css:o`
+                    font-family: ${s.font.family};
+                  `,children:["The quick brown fox jumps over the lazy dog",e("br",{}),"0123456789 !@#$%^&*()"]})]}),l(i,{grow:!1,children:[e(n,{size:"xs",color:"subdued",children:"font.family (Primary)"}),e(r,{size:"xs"}),e(u,{children:s.font.family})]})]})})}),e(i,{children:e(h,{paddingSize:"l",hasBorder:!0,style:{height:"100%",textAlign:"center"},children:l(t,{direction:"column",justifyContent:"spaceBetween",style:{height:"100%"},children:[l(i,{grow:!1,children:[e(n,{css:o`
+                    font-family: ${s.font.familyCode};
+                    font-size: 28px;
+                  `,children:"Monospace"}),l(n,{size:"s",color:"subdued",css:o`
+                    font-family: ${s.font.familyCode};
+                  `,children:["const theme = 'hacker';",e("br",{}),'{ code: true, style: "retro" }']})]}),l(i,{grow:!1,children:[e(n,{size:"xs",color:"subdued",children:"font.familyCode (Code)"}),e(r,{size:"xs"}),e(u,{children:s.font.familyCode})]})]})})}),e(i,{children:e(h,{paddingSize:"l",hasBorder:!0,style:{height:"100%",textAlign:"center"},children:l(t,{direction:"column",justifyContent:"spaceBetween",style:{height:"100%"},children:[l(i,{grow:!1,children:[e(n,{css:o`
+                    font-family: ${s.font.familySerif};
+                    font-size: 28px;
+                  `,children:"Orbitron"}),l(n,{size:"s",color:"subdued",css:o`
+                    font-family: ${s.font.familySerif};
+                    letter-spacing: 2px;
+                  `,children:["SYSTEM ONLINE",e("br",{}),"INITIALIZING..."]})]}),l(i,{grow:!1,children:[e(n,{size:"xs",color:"subdued",children:"font.familySerif (Display)"}),e(r,{size:"xs"}),e(u,{children:s.font.familySerif})]})]})})})]}),e(r,{size:"xl"}),e(f,{}),e(r,{size:"xl"}),e(d,{size:"xs",children:e("h2",{css:m,children:"Font Scale"})}),e(n,{size:"s",color:"subdued",children:e("p",{children:"EUI's type scale from xxxs to xxl"})}),e(r,{size:"m"}),e(h,{paddingSize:"l",hasBorder:!0,children:S.map(c=>l(t,{alignItems:"center",justifyContent:"spaceBetween",css:o`
+              padding: ${s.size.s} ${s.size.m};
+              border-left: 3px solid ${s.colors.primary};
+              margin-bottom: ${s.size.xs};
+            `,children:[e(i,{grow:!1,children:l("span",{style:{fontSize:c.size,lineHeight:c.lineHeight,fontFamily:s.font.family},children:["The quick brown fox (",c.name,")"]})}),e(i,{grow:!1,children:l(t,{gutterSize:"s",alignItems:"center",children:[e(i,{grow:!1,children:e(a,{color:"hollow",children:c.size})}),e(i,{grow:!1,children:l(u,{transparentBackground:!0,children:["euiTheme.font.scale.",c.name]})})]})})]},c.name))}),e(r,{size:"xl"}),e(f,{}),e(r,{size:"xl"}),e(d,{size:"xs",children:e("h2",{css:m,children:"Font Weights"})}),e(n,{size:"s",color:"subdued",children:e("p",{children:"Available font weights"})}),e(r,{size:"m"}),e(t,{wrap:!0,gutterSize:"m",children:w.map(c=>e(i,{grow:!1,style:{width:180},children:l(h,{paddingSize:"m",hasBorder:!0,children:[e("div",{style:{fontWeight:c.value,fontSize:24,marginBottom:8,fontFamily:s.font.family},children:"Aa"}),e(n,{size:"xs",color:"subdued",children:c.name}),e(a,{color:"hollow",children:c.value})]})},c.name))}),e(r,{size:"xl"}),e(f,{}),e(r,{size:"xl"}),e(d,{size:"xs",children:e("h2",{css:m,children:"EUI Title Sizes"})}),e(n,{size:"s",color:"subdued",children:e("p",{children:"EuiTitle component at different sizes"})}),e(r,{size:"m"}),e(h,{paddingSize:"l",hasBorder:!0,children:l(t,{direction:"column",gutterSize:"l",children:[e(i,{children:l(t,{alignItems:"baseline",children:[e(i,{grow:!1,style:{width:80},children:e(a,{children:"xxxs"})}),e(i,{children:e(d,{size:"xxxs",children:e("h6",{children:"Access Granted"})})})]})}),e(i,{children:l(t,{alignItems:"baseline",children:[e(i,{grow:!1,style:{width:80},children:e(a,{children:"xxs"})}),e(i,{children:e(d,{size:"xxs",children:e("h5",{children:"Terminal Ready"})})})]})}),e(i,{children:l(t,{alignItems:"baseline",children:[e(i,{grow:!1,style:{width:80},children:e(a,{children:"xs"})}),e(i,{children:e(d,{size:"xs",children:e("h4",{children:"Hello, World!"})})})]})}),e(i,{children:l(t,{alignItems:"baseline",children:[e(i,{grow:!1,style:{width:80},children:e(a,{children:"s"})}),e(i,{children:e(d,{size:"s",children:e("h3",{children:"System Status: Online"})})})]})}),e(i,{children:l(t,{alignItems:"baseline",children:[e(i,{grow:!1,style:{width:80},children:e(a,{children:"m"})}),e(i,{children:e(d,{size:"m",children:e("h2",{children:"Initializing Matrix"})})})]})}),e(i,{children:l(t,{alignItems:"baseline",children:[e(i,{grow:!1,style:{width:80},children:e(a,{children:"l"})}),e(i,{children:e(d,{size:"l",children:e("h1",{children:"Connection Established"})})})]})})]})}),e(r,{size:"xl"}),e(f,{}),e(r,{size:"xl"}),e(d,{size:"xs",children:e("h2",{css:m,children:"Text Colors"})}),e(n,{size:"s",color:"subdued",children:e("p",{children:"Semantic text colors from the theme"})}),e(r,{size:"m"}),e(h,{paddingSize:"l",hasBorder:!0,children:l(t,{direction:"column",gutterSize:"m",children:[e(i,{children:e(n,{children:e("p",{children:"Default text color (euiTheme.colors.text)"})})}),e(i,{children:e(n,{color:"subdued",children:e("p",{children:"Subdued text for secondary information"})})}),e(i,{children:e(n,{color:"success",children:e("p",{children:"Success text for positive feedback"})})}),e(i,{children:e(n,{color:"warning",children:e("p",{children:"Warning text for caution messages"})})}),e(i,{children:e(n,{color:"danger",children:e("p",{children:"Danger text for errors and alerts"})})}),e(i,{children:e(n,{color:"accent",children:e("p",{children:"Accent text for emphasis"})})})]})}),e(r,{size:"xl"}),l(h,{paddingSize:"m",color:"subdued",children:[e(n,{size:"s",children:e("strong",{children:"Usage:"})}),e(r,{size:"s"}),e(y,{language:"tsx",fontSize:"s",paddingSize:"m",isCopyable:!0,children:`import { useEuiTheme } from '@elastic/eui';
+
+function MyComponent() {
+  const { euiTheme } = useEuiTheme();
+  
+  return (
+    <div style={{ 
+      fontFamily: euiTheme.font.family,
+      fontSize: euiTheme.font.scale.m,
+      fontWeight: euiTheme.font.weight.bold,
+    }}>
+      Styled text
+    </div>
+  );
+}`})]})]})}export{B as default};
