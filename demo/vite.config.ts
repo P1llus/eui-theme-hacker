@@ -26,9 +26,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      // NOTE: es-toolkit/compat alias removed - it doesn't implement all lodash
-      // functions that EUI uses internally, causing runtime errors like
-      // "y is not a function" in production builds
+      // Use es-toolkit for better tree-shaking
+      lodash: "es-toolkit/compat",
     },
   },
   // Optimize deps for EUI
@@ -36,18 +35,6 @@ export default defineConfig({
     include: ["@elastic/eui", "@emotion/react", "@emotion/css"],
   },
   build: {
-    // Chunk splitting for better caching
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          // Split large vendor libraries
-          "vendor-react": ["react", "react-dom", "react-router-dom"],
-          "vendor-eui": ["@elastic/eui"],
-          "vendor-emotion": ["@emotion/react", "@emotion/css"],
-        },
-      },
-    },
-    // Reduce chunk size warnings threshold
     chunkSizeWarningLimit: 1000,
   },
 });
