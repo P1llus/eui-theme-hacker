@@ -26,8 +26,9 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      // Use es-toolkit for better tree-shaking
-      lodash: "es-toolkit/compat",
+      // NOTE: es-toolkit/compat alias removed - it doesn't implement all lodash
+      // functions that EUI uses internally, causing runtime errors like
+      // "y is not a function" in production builds
     },
   },
   // Optimize deps for EUI
